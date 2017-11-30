@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Movie Tickets</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to the Theater</h1>
+
+      <div class="row">
+
+        <div class="col-md-6">
+          <h2>Find a Movie to Watch</h2>
+          <form id="movie-times">
+            <div class="form-group">
+              <label for="new-age">Age</label>
+              <input type="text" class="form-control" id="new-age">
+            </div>
+            <div class="form-group">
+              <select class="form-control" id="title">
+                <option>Murder on the Orient Express</option>
+                <option>Blade Runner</option>
+                <option>Justice League</option>
+                <option>Bad Mom</option>
+                </select>
+            </div>
+            <div class="form-group">
+              <select class="form-control" id="time">
+                <option>Matinee</option>
+                <option>Evening</option>
+                </select>
+            </div>
+            <button type="submit" class="btn">Add</button>
+          </form>
+        </div>
+          <div class="show-results">
+            <div class="col-md-6">
+              <h2>Movies</h2>
+              <div id="show-results">
+                <h2></h2>
+                <p>Movie Title: <span class="first-title"></span></p>
+                <p>Movie Time: <span class="first-time"></span></p>
+                <p>Price: <span class="first-price"></span></p>
+                <p>Age: <span class="first-age"></span></p>
+              </div>
+            </div>
+            </div>
+      </div>
+    </div>
+  </body>
+</html>
